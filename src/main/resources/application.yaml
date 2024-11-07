@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: security-service
+
+  liquibase:
+    change-log: classpath:/db/changelog/master.yaml
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/security_db
+    username: user
+    password: pass
+    driver-class-name: org.postgresql.Driver
